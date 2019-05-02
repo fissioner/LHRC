@@ -79,9 +79,6 @@ h1 {
 
 .roof {
     position: relative;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -webkit-transition: opacity 1s ease-in-out;
 }
 
 .roof:before {
@@ -97,14 +94,15 @@ h1 {
     -o-background-size: cover;
     background-size: cover;
     filter: grayscale(100%) brightness(60%) opacity(.5);
+    -webkit-filter: grayscale(100%) brightness(60%) opacity(.5);
     z-index: -1;
-    transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
+    transition: filter 1s ease-in-out;
     -webkit-transition: -webkit-filter 1s ease-in-out;
 }
 
 .roof:hover:before {
-    filter: grayscale(100%) brightness(40%);
+    filter: grayscale(100%) brightness(40%) opacity(1);
+    -webkit-filter: grayscale(100%) brightness(40%) opacity(1);
 }
 
 #header {
