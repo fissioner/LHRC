@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luxury Home Roofing Consultants</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Petit+Formal+Script" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img id="logo" alt="LHRC logo" src="img/lhrc-logo.png" width="200" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a id="about-btn" class="nav-item nav-link" href="#about">About</a>
+                    <a id="process-btn" class="nav-item nav-link" href="#process">Process</a>
+                    <a id="about-btn" class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+            <div id="title">
+                <div id="lhrc">Luxury Home Roofing Consultants</div>
+            </div>
+    </div>
+    <div class="row roof filter">
+        <div class="col-xl-12 statement">
+            The most important part of a house is the roof.
+        </div>
+    </div>
+    <div id="about" class="row">
+            <div class="section col-xl-12 text-center">
+                    <h1>About</h1>
+                </div>
+            <div class="col-xl-6">
+                    <img id="architect" class="img-fluid img-thumbnail" alt="architect" src="img/architect1.jpg"/>
+            </div>
+            <div class="col-xl-6 about">
+                <p>We are a team dedicated to the process of building the most functionally important part of a luxury home, the roof. Our team is knowledgable and experienced in the entire process of building luxury-home roofing, from beginning to end.
+                </p>
+                <blockquote>
+                        <p id='quote' class="mb-0 blockquote text-center">"Get it done right the first time."</p>
+                    </blockquote>
+                <p>We understand that improper handoff, lack of communication, and segmented accountability is difficult for everyone involved. That's where we come in. We fill in the communication gaps and facilitate the entire process to make sure things get done right the first time, with in-person inspection every step of the way.</p>
+                </div>
+        </div>
+        <div class="row roof filter">
+            <div class="col-xl-12 statement">
+                Accountability for the entire process.
+            </div>
+        </div>
+    <div id="process" class="row text-center">
+        <div class="section col-xl-12 text-center">
+                <h1>Process</h1>
+            </div>
+        <div class="col-xl-4">
+            <h3>Communication</h3>
+            <p>We facilitate effective communication with every team; homeowners, architects, builders, and sub-contractors to ensure progress is communicated effectively before handoff takes place. That means nothing gets past us and we are always in the know about the project from top to bottom.</p>
+        </div>
+        <div class="col-xl-4">
+            <img id="process-img" class="img-fluid" alt="process" src="img/process.png"/>
+        </div>
+        <div class="col-xl-4">
+            <h3>Inspection</h3>
+            We provide continuous in-person inspection, each and every step of the way, to enforce the highest quality at every stage. We don't use drones, cut corners, or make guesses. In-person inspection means that we are physically on the roof with eyes focused on the fine details, no exceptions.
+        </div>
+    </div>
+    <div id="contact" class="row">
+        <div class="section col-xl-12 text-center">
+            <h1 class="text-white">Contact</h1>
+        </div>
+        <div class="col-xl-12">
+            <form class=form-group method=POST action="https://fissionernet-server.herokuapp.com/sent" data-aos='zoom-out'>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="inputFirstName">First Name <span class=required>*</span></label>
+                        <input class="form-control" type=text name=firstName placeholder='John' required></div>
+                    <div class="col-md-6">
+                        <label for="inputLastName">Last Name <span class=required>*</span></label>
+                        <input class="form-control" type=text name=lastName placeholder="Doe" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label for="inputEmail">Email <span class=required>*</span></label>
+                        <input class="form-control" type='email' name=email placeholder="johndoe@email.com" required></div>
+                    <div class="col-md-6">
+                        <label for="inputPhone">Phone <span class=required>*</span></label>
+                        <input class="form-control" type="tel" pattern='^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$'
+                            name=phone placeholder='(999) 999-9999' required></div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <label for="inputCompany">Company</label>
+                        <input class="form-control" type=text name=company placeholder='Roof Masters'>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="Message">Message</label>
+                        <textarea class="form-control" rows=5 name=message placeholder='Enter your message here.'></textarea>
+                    </div>
+                    <button class="btn send" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div id='copy'>lhrconsult.com © 2018 - Coded by <a href="http://fissioner.net" class='crimson fissioner'>Fissioner</a></div>
+    </footer>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

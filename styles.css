@@ -1,0 +1,208 @@
+:root {
+    --main-color: lightgray;
+    --main-font: 'Petit Formal Script', cursive;
+    --secondary-color: #556677;
+  }
+html, body {
+    height: 100%;
+    font-size: 100%;
+    background-color: var(--main-color);
+    scroll-behavior: smooth;
+    font-size: larger;
+}
+
+h1 {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+#header {
+    height: 100%;
+    background-image: url("img/house2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+#title {
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    font-family: var(--main-font);
+    text-align: center;
+    background-color: #556677;
+    opacity: .9;
+    padding: 30px;
+}
+
+.statement {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 80px 0px 80px 0px;
+    text-shadow: var(--secondary-color) 3px 5px 2px;
+    color: white;
+}
+
+.blockquote, h3 {
+    color: var(--secondary-color);
+}
+
+.row {
+    padding: 200px 10% 200px 10%;
+}
+
+.section {
+    padding-bottom: 80px;
+}
+
+#process-img {
+    margin-top: -30px;
+}
+
+/* .about {
+    margin-top: 60px;
+} */
+
+.roof {
+    position: relative;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+.roof:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: url(img/roof2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(100%) brightness(60%) opacity(.5);
+    z-index: -1;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: -webkit-filter 1s ease-in-out;
+}
+
+.roof:hover:before {
+    filter: grayscale(100%) brightness(40%);
+}
+
+#header {
+    animation: fadein 3s ease-in-out;
+    -webkit-key-animation: fadein 3s ease-in-out;
+    -moz-animation: fadein 3s ease-in-out;
+    -ms-animation: fadein 3s ease-in-out;
+}
+
+#header:hover {
+    opacity: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#about-btn:target {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px);
+}
+
+#process-btn:target {
+    -webkit-transform: translateY( -500px);
+    transform: translateY( -500px);
+}
+
+a[ id="contact-btn"]:target~body.row {
+    -webkit-transform: translateY( -1000px);
+    transform: translateY( -1000px);
+}
+
+form {
+    color: var(--main-color);
+    max-width: 800px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.send {
+    margin: 15px 0px 0px 5px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+footer {
+    padding: 10px;
+    color: gray;
+    text-align: center;
+    font-size: small;
+    background-color: var(--main-color);
+  }
+
+footer>div>a {
+      color: black;
+  }
+
+#contact {
+    background-color: var(--secondary-color);
+}
