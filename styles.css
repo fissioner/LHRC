@@ -9,6 +9,10 @@ html, body {
     background-color: var(--main-color);
     scroll-behavior: smooth;
     font-size: larger;
+    animation: fadein 3s ease-in-out;
+    -webkit-key-animation: fadein 3s ease-in-out;
+    -moz-animation: fadein 3s ease-in-out;
+    -ms-animation: fadein 3s ease-in-out;
 }
 
 h1 {
@@ -101,13 +105,6 @@ h1 {
 
 .roof:hover:before {
     opacity: 1;
-}
-
-#header {
-    animation: fadein 3s ease-in-out;
-    -webkit-key-animation: fadein 3s ease-in-out;
-    -moz-animation: fadein 3s ease-in-out;
-    -ms-animation: fadein 3s ease-in-out;
 }
 
 #header:hover {
