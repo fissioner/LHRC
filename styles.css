@@ -93,16 +93,14 @@ h1 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    filter: grayscale(100%) brightness(60%) opacity(.5);
-    -webkit-filter: grayscale(100%) brightness(60%) opacity(.5);
     z-index: -1;
-    transition: filter 1s ease-in-out;
-    -webkit-transition: -webkit-filter 1s ease-in-out;
+    opacity: .4;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: -webkit-opacity 1s ease-in-out;
 }
 
 .roof:hover:before {
-    filter: grayscale(100%) brightness(40%) opacity(1);
-    -webkit-filter: grayscale(100%) brightness(40%) opacity(1);
+    opacity: 1;
 }
 
 #header {
